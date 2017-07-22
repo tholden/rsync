@@ -1356,6 +1356,14 @@ This option is a transfer rule, not an exclude, so it doesn't affect the
 data that goes into the file-lists, and thus it doesn't affect deletions.
 It just limits the files that the receiver requests to be transferred.
 
+dit(bf(--ignore-non-existing-directory)) This tells rsync to skip creating
+directories that do not exist yet on the destination. It is a variation on
+bf(--ignore-non-existing) that is applied only for directories.
+
+This option is a transfer rule, not an exclude, so it doesn't affect the
+data that goes into the file-lists, and thus it doesn't affect deletions.
+It just limits the files that the receiver requests to be transferred.
+
 dit(bf(--ignore-existing)) This tells rsync to skip updating files that
 already exist on the destination (this does em(not) ignore existing
 directories, or nothing would get done).  See also bf(--existing).
